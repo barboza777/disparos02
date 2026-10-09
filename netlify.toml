@@ -1,15 +1,10 @@
 [build]
 command = "npm install && npm run build"
-publish = ".output/public"
-
-[functions]
-directory = ".output/server"
+# Nitro's Netlify preset writes static assets to dist/ and the server function
+# to .netlify/functions-internal/, which Netlify picks up automatically.
+publish = "dist"
 
 # Secrets scanning configuration
 # Omit keys that are expected to be in the build output (public keys) or are false positives
 [env.production]
 SECRETS_SCAN_OMIT_KEYS = "VITE_SUPABASE_PUBLISHABLE_KEY,SUPABASE_URL,SEARCHAPI_CPF_TOKEN"
-
-# Plugin to automatically install Netlify Function dependencies
-[[plugins]]
-package = "@netlify/plugin-functions-install-core"
