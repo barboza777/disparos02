@@ -1,0 +1,30 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/__23tanstack-start-server-fn-resolver-BtRGWGxz.js
+var manifest = {
+	"0b8c54d305a7448366e680721291cd8163ae2012fe94e3a21bb350b012171fa0": {
+		functionName: "getAdminSettings_createServerFn_handler",
+		importer: () => import("./_ssr/admin.functions-B1DNFkWE.mjs")
+	},
+	"6819ef62a115a9fed5da9cfb07cf9da76d39c84579b91eccca9a635402a4e228": {
+		functionName: "saveAdminSettings_createServerFn_handler",
+		importer: () => import("./_ssr/admin.functions-B1DNFkWE.mjs")
+	},
+	"bd91712aa12a864ae43341e860d6d1c64b91b59ae5ce60ea0dbdc10eee9819c1": {
+		functionName: "getAdminDashboard_createServerFn_handler",
+		importer: () => import("./_ssr/admin.functions-B1DNFkWE.mjs")
+	},
+	"c6803c375dd83935b4b6fde8c958d3733030f537b51595860a1d856b2fc1756e": {
+		functionName: "getAuthenticationContent_createServerFn_handler",
+		importer: () => import("./_ssr/auth-content.functions-xrcFgOIZ.mjs")
+	}
+};
+async function getServerFnById(id, access) {
+	const serverFnInfo = manifest[id];
+	if (!serverFnInfo) throw new Error("Server function info not found for " + id);
+	const fnModule = serverFnInfo.module ??= await serverFnInfo.importer();
+	if (!fnModule) throw new Error("Server function module not resolved for " + id);
+	const action = fnModule[serverFnInfo.functionName];
+	if (!action) throw new Error("Server function module export not resolved for serverFn ID: " + id);
+	return action;
+}
+//#endregion
+export { getServerFnById as t };

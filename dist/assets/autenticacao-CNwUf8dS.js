@@ -1,0 +1,1 @@
+import{r as e}from"./useRouter-BOAPZDg1.js";import{n as t}from"./index-DY32dSZm.js";import{t as n}from"./admin-login-ma21s2hS.js";var r=e();function i(){return(0,r.jsx)(n,{...t.useLoaderData()})}export{i as component};

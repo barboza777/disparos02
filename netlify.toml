@@ -6,6 +6,6 @@ publish = "dist"
 # and output server function to .netlify/functions-internal/
 
 # Secrets scanning configuration
-# Omit VITE_* keys - these are public and intentionally inlined into the client bundle
+# These are public Supabase keys intentionally exposed to the client
 [build.environment]
-SECRETS_SCAN_OMIT_KEYS = "VITE_SUPABASE_PUBLISHABLE_KEY,VITE_SUPABASE_URL"
+SECRETS_SCAN_OMIT_KEYS = "VITE_SUPABASE_PUBLISHABLE_KEY,VITE_SUPABASE_URL,SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY"
