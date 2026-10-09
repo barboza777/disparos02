@@ -4,4 +4,16 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { nitro } from "nitro/vite";
-export default defineConfig({ plugins: [tsconfigPaths(), tanstackStart({ server: { entry: "server" } }), react(), tailwindcss(), nitro({ preset: "node-server" })] });
+
+const isNetlify = process.env.NETLIFY === "true";
+const nitroPreset = isNetlify ? "netlify" : "node-server";
+
+export default defineConfig({
+  plugins: [
+    tsconfigPaths(),
+    tanstackStart({ server: { entry: "server" } }),
+    react(),
+    tailwindcss(),
+    nitro({ preset: nitroPreset }),
+  ],
+});

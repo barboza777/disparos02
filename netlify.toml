@@ -1,6 +1,9 @@
 [build]
 command = "npm install && npm run build"
-publish = ".output/public"
+publish = "dist"
+
+# Nitro will automatically use the 'netlify' preset when NETLIFY env var is set
+# and output server function to .netlify/functions-internal/
 
 # Secrets scanning configuration
 # Omit keys that are expected to be in the build output (public keys) or are false positives
