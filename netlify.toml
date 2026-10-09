@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"
+publish = ".output/public"
+
+[functions]
+directory = ".output/server"
+
+# Secrets scanning configuration
+# Omit keys that are expected to be in the build output (public keys) or are false positives
+[env.production]
+SECRETS_SCAN_OMIT_KEYS = "VITE_SUPABASE_PUBLISHABLE_KEY,SUPABASE_URL,SEARCHAPI_CPF_TOKEN"
