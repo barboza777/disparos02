@@ -1,0 +1,10 @@
+node_modules
+dist
+.output
+.vinxi
+.netlify/functions-internal
+.netlify/edge-functions
+.netlify/deploy
+.netlify/v1
+.env
+.env.local
