@@ -4,7 +4,7 @@
 
 **Status:** ✅ Integrado e Funcionando
 
-- **Token:** `oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg`
+- **Token:** Configurado via variáveis de ambiente
 - **URL API:** `https://api.hubpague.io/v1`
 - **Funcionalidades:**
   - ✅ Gerar PIX com QR Code
@@ -22,7 +22,7 @@
 **Status:** ✅ Integrado e Funcionando
 
 - **URL:** `https://searchapi.it.com/consulta`
-- **Token:** `1479`
+- **Token:** Configurado via variáveis de ambiente
 - **Funcionalidades:**
   - ✅ Consulta de dados por CPF
   - ✅ Validação de CPF
@@ -79,12 +79,12 @@
 ## 📝 Variáveis de Ambiente Necessárias
 
 ```bash
-HUBPAGUE_API_TOKEN=oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg
-SEARCHAPI_CPF_TOKEN=1479
+HUBPAGUE_API_TOKEN=seu_token_hubpague
+SEARCHAPI_CPF_TOKEN=seu_token_searchapi
 SUPABASE_URL=sua_url
 SUPABASE_SERVICE_ROLE_KEY=sua_chave
-UTMIFY_API_TOKEN=seu_token
-UTMIFY_SIGNING_SECRET=seu_secret
+UTMIFY_API_TOKEN=seu_token_utmify
+UTMIFY_SIGNING_SECRET=seu_secret_utmify
 ```
 
 ## 🚀 Deploy Vercel

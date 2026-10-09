@@ -6,7 +6,7 @@
 - [ ] Conta Vercel (https://vercel.com)
 - [ ] Projeto descompactado
 - [ ] Credenciais Supabase prontas
-- [ ] Token UTMify: `Dc5wzLeH8RQnV6J7wzu4Y5ouU2l8puBgnc7g`
+- [ ] Token UTMify pronto
 
 ---
 
@@ -93,10 +93,10 @@ VITE_SUPABASE_PUBLISHABLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 SUPABASE_URL=https://seu-projeto.supabase.co
 SUPABASE_PUBLISHABLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-UTMIFY_API_TOKEN=Dc5wzLeH8RQnV6J7wzu4Y5ouU2l8puBgnc7g
-UTMIFY_SIGNING_SECRET=seu_secret_aqui
-HUBPAGUE_API_TOKEN=oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg
-SEARCHAPI_CPF_TOKEN=1479
+UTMIFY_API_TOKEN=seu_token_utmify
+UTMIFY_SIGNING_SECRET=seu_secret_utmify
+HUBPAGUE_API_TOKEN=seu_token_hubpague
+SEARCHAPI_CPF_TOKEN=seu_token_searchapi
 ORDER_WEBHOOK_SECRET=gere_uma_string_aleatoria_aqui
 RECONCILIATION_TOKEN=gere_uma_string_aleatoria_aqui
 ```
@@ -137,8 +137,8 @@ Você deve ver a página de login. ✅
 1. No painel admin, clique: **Configurações**
 2. Procure: **Gateway de Pagamentos**
 3. Cole os tokens:
-   - **Hubpague:** `oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg`
-   - **SearchAPI:** `1479`
+   - **Hubpague:** [seu token Hubpague]
+   - **SearchAPI:** [seu token SearchAPI]
 4. Clique: **Salvar configurações** ✅
 
 ---

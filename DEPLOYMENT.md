@@ -2,8 +2,8 @@
 
 ## ✅ Alterações Realizadas
 
-1. **API de CPF** - Atualizada para `searchapi.it.com` com token `1479`
-2. **Gateway Hubpague** - Integrado com token `oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg`
+1. **API de CPF** - Atualizada para `searchapi.it.com`
+2. **Gateway Hubpague** - Integrado e funcional
 3. **Endpoints de Pagamento** - `/api/public/pix` e `/api/public/pix-status` totalmente funcionais
 4. **Reconciliação de Pagamentos** - Mantida a integração com Supabase e UTMify
 5. **Painel Admin** - Totalmente preservado e funcional
@@ -28,8 +28,8 @@ SUPABASE_PUBLISHABLE_KEY=sua_chave_publica
 SUPABASE_SERVICE_ROLE_KEY=sua_chave_secreta
 UTMIFY_API_TOKEN=seu_token_utmify
 UTMIFY_SIGNING_SECRET=seu_secret_utmify
-HUBPAGUE_API_TOKEN=oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg
-SEARCHAPI_CPF_TOKEN=1479
+HUBPAGUE_API_TOKEN=seu_token_hubpague
+SEARCHAPI_CPF_TOKEN=seu_token_searchapi
 ORDER_WEBHOOK_SECRET=seu_webhook_secret
 RECONCILIATION_TOKEN=seu_reconciliation_token
 ```

@@ -36,7 +36,13 @@ export const Route = createFileRoute("/api/public/cpf")({
           });
         }
         try {
-          const token = "1479";
+          const token = process.env.SEARCHAPI_CPF_TOKEN;
+          if (!token) {
+            return new Response(JSON.stringify({ error: "Configuração inválida" }), {
+              status: 500,
+              headers: cors,
+            });
+          }
           const response = await fetch(
             `https://searchapi.it.com/consulta?token_api=${token}&cpf=${encodeURIComponent(cpf)}`,
           );

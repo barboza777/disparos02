@@ -20,12 +20,12 @@ No painel admin, clique em **"Configurações"** e procure pela seção **"Gatew
 
 ### 1️⃣ Token Hubpague
 
-- Cole seu token: `oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg`
+- Cole seu token Hubpague aqui
 - Este token é armazenado com segurança no banco de dados
 
 ### 2️⃣ Token SearchAPI CPF
 
-- Cole o token: `1479`
+- Cole o token SearchAPI aqui
 - Usado para validação de CPF dos clientes
 
 ### 3️⃣ Salvar Configurações

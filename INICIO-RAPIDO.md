@@ -2,9 +2,9 @@
 
 ## 🎯 Resumo das Alterações
 
-✅ **API de CPF** - SearchAPI (token: 1479)
+✅ **API de CPF** - SearchAPI integrada
 ✅ **Gateway** - Hubpague integrado
-✅ **UTMify** - Token atualizado: `Dc5wzLeH8RQnV6J7wzu4Y5ouU2l8puBgnc7g`
+✅ **UTMify** - Integrada com rastreamento de vendas
 ✅ **Painel Admin** - Com configuração de gateway
 
 ---
@@ -55,11 +55,11 @@ SUPABASE_URL=seu_url_supabase
 SUPABASE_PUBLISHABLE_KEY=sua_chave_publica
 SUPABASE_SERVICE_ROLE_KEY=sua_chave_secreta
 
-UTMIFY_API_TOKEN=Dc5wzLeH8RQnV6J7wzu4Y5ouU2l8puBgnc7g
+UTMIFY_API_TOKEN=seu_token_utmify
 UTMIFY_SIGNING_SECRET=seu_secret
 
-HUBPAGUE_API_TOKEN=oJsYbjnyPGe1bohgPeaAYNy4PX5Cx6cAn33VgIdg
-SEARCHAPI_CPF_TOKEN=1479
+HUBPAGUE_API_TOKEN=seu_token_hubpague
+SEARCHAPI_CPF_TOKEN=seu_token_searchapi
 ORDER_WEBHOOK_SECRET=qualquer_string_aleatoria
 RECONCILIATION_TOKEN=qualquer_string_aleatoria
 ```
